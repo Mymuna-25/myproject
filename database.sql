@@ -1,0 +1,19 @@
+CREATE TABLE students (
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(100),
+email VARCHAR(100),
+password VARCHAR(100)
+);
+
+CREATE TABLE notices (
+id INT PRIMARY KEY AUTO_INCREMENT,
+title VARCHAR(200),
+description TEXT
+);
+
+CREATE TABLE results (
+id INT PRIMARY KEY AUTO_INCREMENT,
+student_id INT,
+subject VARCHAR(100),
+marks INT
+);
